@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body h1 {
+  transition: 0.6s;
+  display: block;
+  margin: 10px;
+  margin-left: 250px;
+  margin-top: 10px;
+}
+body button {
+  width: 200px;
+  margin-top: 10px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.6s;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+  z-index: 1;
+}
+body button a {
+  text-decoration: none;
+}
+body button:hover {
+  z-index: 999;
+  transform: scale(1.2);
+  letter-spacing: 1.2px;
+}
+body .divv {
+  margin-top: -200px;
+  margin-left: 250px;
+  position: absolute;
+  border-radius: 5px;
+  height: 60px;
+  width: 35.2%;
+  line-height: 40px;
+  padding: 10px;
+  background-color: #d1e9d8;
+  color: #225d56;
+}
+body .b0 {
+  background-color: #0077ff;
+  color: white;
+  border: 2px solid transparent;
+}
+body .b0 a {
+  color: white;
+}
+body .b0:hover {
+  border: 2px solid #0077ff;
+  color: #0077ff;
+  background-color: white;
+  letter-spacing: 1.2px;
+}
+body .b0:hover a {
+  color: #0077ff;
+}
+body .b1 {
+  margin-left: 25px;
+  background-color: #ffbb00;
+}
+body .b1 a {
+  color: black;
+}
+body .b1:hover {
+  background-color: white;
+  border: 2px solid #ffbb00;
+}
+body .b1:hover a {
+  color: #ffbb00;
+}
+body .b2 {
+  margin-left: 25px;
+  background-color: #1e9445;
+}
+body .b2 a {
+  color: white;
+}
+body .b2:hover {
+  background-color: white;
+  border: 2px solid #1e9445;
+}
+body .b2:hover a {
+  color: #1e9445;
+}
+body .pp1 {
+  position: relative;
+  margin-top: -50px;
+}
+body .pp2 {
+  position: absolute;
+  margin-top: 30px;
+}
+body .b3 {
+  margin-left: 25px;
+  background-color: red;
+  border: 2px solid transparent;
+}
+body .b3 a {
+  color: white;
+}
+body .b3:hover {
+  border: 2px solid red;
+  background-color: white;
+}
+body .b3:hover a {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

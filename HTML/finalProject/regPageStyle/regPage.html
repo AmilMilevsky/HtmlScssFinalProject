@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HTML/finalProject/regPageStyle/style.css">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/c5b3b392da.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="show()">
+    <form action="" id="form">
+        <div class="line"></div>
+        <!-- <button class="b1"><a href="/HTML/finalProject/mainPageStyle/mainPage.html"">Main page</a></button> -->
+        <button class="b1"><a href="/"">Main page</a></button>
+        <div class=" line"></div>
+                <div id="divvv" class="divv">You created account! Redirecting to the login page in 3s.</div>
+                <h1 id="h11">Register</h1>
+                <div class="line"></div>
+                <label class="aaa" for="">Name: </label>
+                <input class="qqq" minlength="4" maxlength="30" pattern=".{4,}" required onkeypress='validatee(event)'
+                    name="abc" id="namee" type="text">
+                <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                <p class="nol1">The value can't be null. Min length: 2, max length: 30.</p>
+                <label for="">Phone: </label>
+                <input class="qqq" minlength="4" maxlength="30" pattern="\d{4,}" required type="number" name=""
+                    id="numee">
+                <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                <p class="nol2">The value can't be null. Min length: 2, max length: 30.</p>
+                <label for="">User name: </label>
+                <input class="qqq" minlength="4" maxlength="30" pattern=".{4,}" required onkeypress='validatee(event)'
+                    id="unamee" type="text">
+                <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                <p class="nol3">The value can't be null. Min length: 2, max length: 30.</p>
+                <label for="">Password: </label>
+                <input class="qqq" minlength="4" maxlength="30" pattern=".{4,}" required type="password" name=""
+                    id="pwdd">
+                <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                <p class="nol4">The value can't be null. Min length: 2, max length: 30.</p>
+                <button type="button" onclick="func()" id="butt" value="Register" class="b2">Register</button>
+                <div class="line"></div>
+                <p>Already have an account?</p>
+                <button class="b3"><a href="/HTML/finalProject/loginPageStyle/loginPage.html">Log in</a></button>
+    </form>
+
+    <script src="/HTML/finalProject/regPageStyle/script.js"></script>
+    <script src="/HTML/finalProject/regPageStyle/script1.js"></script>
+</body>
+
+</html>

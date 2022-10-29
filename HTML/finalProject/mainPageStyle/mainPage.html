@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HTML/finalProject/mainPageStyle/sliderStyle/slider.css">
+    <link rel="stylesheet" href="/HTML/finalProject/mainPageStyle/style.css">
+    <title>Document</title>
+</head>
+
+<body onload="load()">
+    <div class="line"></div>
+    <button id="btn" class="btn b0"><a href="/HTML/finalProject/compPageStyle/index.htm">My computers</a></button>
+    <button id="btn" class="btn b1"><a href="/HTML/finalProject/shopPageStyle/index.htm">Start shopping</a></button>
+    <button id="btn" class="btn btn1 b2"><a href="/HTML/finalProject/loginPageStyle/loginPage.html">Log in</a></button>
+    <button id="btn" class="btn btn2 b3" onclick="loadd()"><a href="/HTML/finalProject/mainPageStyle/mainPage.html">Log
+            out</a></button>
+    <div class="line"></div>
+    <div id="divvv" class="divv">You succesfully logged in!</div>
+    <h1 id="h1">User name: </h1>
+    <div class="line"></div>
+    <div class="slideshow-container">
+        <div class="mySlides fade activee">
+            <img src="/HTML/finalProject/images/acer.jpg" style="width:100%">
+            <h3>Acer</h3>
+            <p>Acer almaga deyer.</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="/HTML/finalProject/images/asus.jpg" style="width:100%">
+            <h3>Asus</h3>
+            <p>Asus almaga deyer.</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="/HTML/finalProject/images/dell.jpg" style="width:100%">
+            <h3>Dell</h3>
+            <p>Dell almaga deyer.</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="/HTML/finalProject/images/hp.jpg" style="width:100%">
+            <h3>HP</h3>
+            <p>HP almaga deyer.</p>
+        </div>
+        <div class="mySlides fade">
+            <img src="/HTML/finalProject/images/lenovo.jpg" style="width:100%">
+            <h3>Lenovo</h3>
+            <p>Lenovo almaga deyer.</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div class="line"></div>
+
+    <script src="/HTML/finalProject/mainPageStyle/sliderStyle/script1.js"></script>
+    <script src="/HTML/finalProject/mainPageStyle/script.js"></script>
+</body>
+
+</html>

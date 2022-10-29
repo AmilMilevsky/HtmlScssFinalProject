@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5b3b392da.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="line"></div>
+    <button class="btn b1"><a href="/HTML/finalProject/mainPageStyle/mainPage.html">Main page</a></button>
+    <button id="myBtn" class="btn b2">New computer</button><!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>New</h1>
+            <div class="row main">
+                <form id="form" action="" onsubmit="return validateForm()">
+                    <div class="col-md-6 left">
+                        <div class="row row1">
+                            <h5>Category:</h5>
+                            <select name="aa" id="aa">
+                                <option value="Acer">Acer</option>
+                                <option value="Asus">Asus</option>
+                                <option value="Dell">Dell</option>
+                                <option value="Hp">Hp</option>
+                                <option value="Lenovo">Lenovo</option>
+                            </select>
+                        </div>
+                        <div class="row row2">
+                            <h5>Name:</h5>
+                            <input minlength="4" maxlength="30" pattern=".{4,}" required class="inp" id="inp1"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv1">Invalid data.</p>
+                        </div>
+                        <div class="row row3">
+                            <h5>Price:</h5>
+                            <input minlength="4" maxlength="30" pattern=".{4,}" required class="inp" id="inp2"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv2">Invalid data.</p>
+                        </div>
+                        <div class="row row4">
+                            <h5>Description:</h5>
+                            <input minlength="4" maxlength="100" pattern=".{4,}" required class="inp" id="inp3"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv3">Invalid data.</p>
+                        </div>
+                        <div class="row row5">
+                            <h5>New:</h5>
+                            <select name="bb" id="bb">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="row row6">
+                            <h5>Photo:</h5>
+                            <input minlength="4" maxlength="30" pattern=".{4,}" required class="inp" id="inp5"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv5">Invalid data.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="row row1">
+                            <h5>RAM: (GB)</h5>
+                            <input maxlength="30" required class="inp" id="inp6" type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv6">Invalid data.</p>
+                        </div>
+                        <div class="row row2">
+                            <h5>Main processor:</h5>
+                            <input minlength="4" maxlength="30" pattern=".{4,}" required class="inp" id="inp7"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv7">Invalid data.</p>
+                        </div>
+                        <div class="row row3">
+                            <h5>ROM: (GB)</h5>
+                            <input maxlength="30" required class="inp" id="inp8" type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv8">Invalid data.</p>
+                        </div>
+                        <div class="row row4">
+                            <h5>ROM type:</h5>
+                            <select name="cc" id="cc">
+                                <option value="hdd">HDD</option>
+                                <option value="ssd">SSD</option>
+                            </select>
+                        </div>
+                        <div class="row row5">
+                            <h5>Operating system:</h5>
+                            <input minlength="4" maxlength="30" pattern=".{4,}" required class="inp" id="inp10"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv10">Invalid data.</p>
+                        </div>
+                        <div class="row row6">
+                            <h5>GPU:</h5>
+                            <input minlength="4" maxlength="30" pattern=".{4,}" required class="inp" id="inp11"
+                                type="text">
+                            <i class="qal qwqw qsqs fa-solid fa-circle"></i>
+                            <p class="inv inv11">Invalid data.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="line"></div>
+            <div class="row brow">
+                <input type="submit" class="btnn btn1" id="subm" value="Save"></input>
+                <button class="btnn btn2" id="clearr">Clear</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="line"></div>
+    <div class="ln">
+        <div class="left">
+            <p>Show</p>
+        </div>
+        <div class="right">
+            <p>Search: </p>
+            <input type="text" id="search" onkeyup="searchTable()" placeholder="Search for.." title="Type in a name">
+            <i class="fa-solid ic fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="line"></div>
+    <table id="tbl">
+        <tr>
+            <th width="10%">ID</th>
+            <th width="20%">Name</th>
+            <th width="25%">Photo</th>
+            <th width="20%">Price</th>
+            <th width="25%">Actions</th>
+        </tr>
+    </table>
+    <button onclick="fnc()">aa</button>
+    <script src="script.js"></script>
+    <script src="modalscript.js"></script>
+</body>
+
+</html>

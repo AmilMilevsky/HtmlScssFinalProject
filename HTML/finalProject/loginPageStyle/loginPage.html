@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HTML/finalProject/loginPageStyle/style.css">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/c5b3b392da.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="show()">
+    <form action="">
+        <div class="line"></div>
+        <button class="b1"><a href="/HTML/finalProject/mainPageStyle/mainPage.html"">Main page</a></button>
+        <div class=" line"></div>
+                <h1>Log in</h1>
+                <div class="line"></div>
+                <div id="suc" class="succ">Logged in succesfull! Redirecting to the login page in 3s.</div>
+                <label id="lbl" for="">Username: </label>
+                <input required minlength="3" onkeypress='validatee(event)' id="unamee" type="text">
+                <i class="fa-solid fa-check qal"></i>
+                <label for="">Password: </label>
+                <input required minlength="3" type="password" name="" id="pwdd">
+                <i class="fa-solid fa-check qal"></i>
+                <input type="button" onclick="func()" value="Log into account" id="butt" class="b2"></input>
+                <div class="line"></div>
+                <p>Don't have an account?</p>
+                <button class="b3"><a href="/HTML/finalProject/regPageStyle/regPage.html">Register</a></button>
+    </form>
+    <script src="/HTML/finalProject/loginPageStyle/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+* body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+* .line {
+  height: 2px;
+  width: 98vw;
+  margin-left: 1vw;
+  display: inline-block;
+  background-color: #e9e9e9;
+}
+* .slideshow-container {
+  margin-top: 3% !important;
+  width: 660px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+* .slideshow-container .mySlides {
+  display: none;
+}
+* .slideshow-container .mySlides img {
+  width: 660px;
+  height: 500px;
+  vertical-align: middle;
+}
+* .slideshow-container .activee {
+  display: block;
+}
+* .slideshow-container .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+* .slideshow-container .prev {
+  left: -265px;
+  margin-right: 8%;
+}
+* .slideshow-container .prev,
+* .slideshow-container .next {
+  text-align: center;
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  width: auto;
+  height: 500px;
+  padding: 16px;
+  line-height: 500px;
+  background-color: #e4c8c5;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border: 2px solid transparent;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+* .slideshow-container .prev:hover,
+* .slideshow-container .next:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+}
+* .slideshow-container .next {
+  margin-left: 8%;
+  right: -265px;
+  border-radius: 3px 0 0 3px;
+}
+* .dot {
+  cursor: pointer;
+  height: 7px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 1px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+* .dot:hover {
+  background-color: #717171;
+}
+* .active {
+  background-color: #717171;
+}
+* h3 {
+  position: absolute;
+  bottom: 80px;
+  margin-left: 47%;
+  color: white;
+  transform: scale(1.2);
+}
+* p {
+  bottom: 50px;
+  transform: scale(1.1);
+  color: white;
+  margin-left: 41%;
+  position: absolute;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=slider.css.map */

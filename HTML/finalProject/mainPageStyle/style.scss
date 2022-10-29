@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+body {
+    font-family: "Open Sans", sans-serif;
+    h1 {
+        transition: 0.6s;
+        display: block;
+        margin: 10px;
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+    button {
+        width: 200px;
+        margin-top: 10px;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        transition: 0.6s;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-weight: 400;
+        cursor: pointer;
+        z-index: 1;
+        a {
+            text-decoration: none;
+        }
+        &:hover {
+            z-index: 999;
+            transform: scale(1.2);
+            letter-spacing: 1.2px;
+        }
+    }
+    .divv {
+        margin-top: -200px;
+        margin-left: 250px;
+        position: absolute;
+        border-radius: 5px;
+        height: 60px;
+        width: 35.2%;
+        line-height: 40px;
+        padding: 10px;
+        background-color: #d1e9d8;
+        color: #225d56;
+    }
+    .b0 {
+        background-color: #0077ff;
+        color: white;
+        a {
+            color: white;
+        }
+        border: 2px solid transparent;
+        &:hover {
+            border: 2px solid #0077ff;
+            color: #0077ff;
+            background-color: white;
+            letter-spacing: 1.2px;
+            a {
+                color: #0077ff;
+            }
+        }
+    }
+    .b1 {
+        margin-left: 25px;
+        background-color: #ffbb00;
+        a {
+            color: black;
+        }
+        &:hover {
+            background-color: white;
+            border: 2px solid #ffbb00;
+            a {
+                color: #ffbb00;
+            }
+        }
+    }
+    .b2 {
+        margin-left: 25px;
+        background-color: #1e9445;
+        a {
+            color: white;
+        }
+        &:hover {
+            background-color: white;
+            border: 2px solid #1e9445;
+            a {
+                color: #1e9445;
+            }
+        }
+    }
+    .pp1 {
+        position: relative;
+        margin-top: -50px ;
+    }
+    .pp2 {
+        position: absolute;
+        margin-top: 30px;
+    }
+    .b3 {
+        margin-left: 25px;
+        background-color: red;
+        border: 2px solid transparent;
+        a {
+            color: white;
+        }
+        &:hover {
+            border: 2px solid red;
+            background-color: white;
+            a {
+                color: red;
+            }
+        }
+    }
+}
